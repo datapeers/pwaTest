@@ -1,0 +1,3 @@
+<label>Add an item: <input (blur)="editTitle($event.target.value)"></label>
+<button [disabled]="newToDoTitle.length === 0" (click)="addToDo()">Add To Do</button>
+<app-to-do *ngFor="let toDo of toDos" [toDo]="toDo" (toDoToggleEvent)="toDoToggled($event)"></app-to-do>

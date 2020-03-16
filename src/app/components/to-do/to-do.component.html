@@ -1,0 +1,4 @@
+<div [ngStyle]="{done: toDo.done}">
+    {{toDo.title}}
+    <input type="checkbox" [checked]="toDo.done" (change)="changeCheckbox()">
+</div>
